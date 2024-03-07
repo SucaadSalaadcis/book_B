@@ -41,6 +41,11 @@ async function run() {
         }
     });
 
+     // get 
+     app.get("/", async (req, res)=> {
+       res.send("Welcome")
+    });
+
     // get all books from a data base
     app.get("/all_books", async (req, res)=> {
         try {
